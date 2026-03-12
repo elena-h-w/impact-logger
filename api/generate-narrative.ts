@@ -232,7 +232,7 @@ Write ONLY the narrative, no preamble or explanation.`;
     // Call Claude API
     const message = await anthropic.messages.create({
       model: 'claude-sonnet-4-5-20250514',
-      max_tokens: maxTokens,
+      max_tokens: 600,
       messages: [{
         role: 'user',
         content: prompt
